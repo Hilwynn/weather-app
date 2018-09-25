@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <!-- Add your code here! -->
-  </body>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  
+    <div class="weather-box">
+      
+      <div id="start" class="cities">
+        <p id="stockholm" class="city-link">Stockholm</p>
+      </div>
+      
+      <div class="cities">
+        <p id="gothenburg" class="city-link">Göteborg</p>
+      </div>
+      
+      <div class="cities">
+        <p id="malmoe" class="city-link">Malmö</p>
+      </div>
+      
+      <div class="weather-info">
+      
+        <div id="city-name"></div>
+        
+        <div class="temperature-container">
+          <div id="city-temperature"></div>
+          <div id="city-weather"></div>
+        </div>
+        
+        <div class="sun-container">
+          <div class="sun-image">
+            <img src="./icon.png" alt="Image of a sun" />
+          </div>
+          <div class="sun-times">
+            <div id="city-sunrise"></div>
+            <div id="city-sunset"></div>    
+          </div>
+        </div>
+      
+      </div>
+        
+    </div>
+
+  <script src="./script.js"></script>
+</body>
 </html>

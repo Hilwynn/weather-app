@@ -1,0 +1,116 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Abel", sans-serif;
+  font-size: 62.5%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cities {
+  background: rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: .5rem 0;
+  text-align: center;
+  width: 33.33%;
+}
+
+#start {
+  border-bottom: none;
+}
+
+.weather-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 150px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 550px;
+}
+
+.weather-info {
+  background: rgba(255, 255, 255, .2);
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.2rem;
+  padding: 15px;
+  width: 100%; 
+}
+
+#city-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.4rem 0;
+  width: 100%;
+}
+
+.temperature-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.sun-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.sun-image img {
+  height: auto;
+  width: 100%;
+}
+
+.sun-times {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#city-temperature, #city-weather {
+  font-size: 2.2rem;
+}
