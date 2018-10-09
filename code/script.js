@@ -43,7 +43,7 @@ const receivedWeatherData = (weatherData) => {
     gradientColor = `190, 40%, 70%`
   } else if (temperature > 10 && temperature <= 20) {
     gradientColor = `190, 40%, 80%`
-  } else if (termperature > 20 && temperature <= 25) {
+  } else if (temperature > 20 && temperature <= 25) {
     gradientColor = `10, 40%, 80%`
   } else if (temperature > 25 && temperature <= 30) {
     gradientColor = `10, 40%, 70%`
