@@ -16,14 +16,12 @@ const changeCity = (city) => {
   cityTab.style.borderBottom = "none"
 }
 
-// .forEach cannot be used directly on HTML Collections since its not an array
-// Array.prototype can be truncated to a pair of brackets []
+// Go through each item in the HTML Collection and add an event listener
 [].forEach.call(cityLink, (link) => { 
     link.addEventListener("click", changeCity)
 })
 
 // Fetch API data when changing city
-
 const receivedWeatherData = (weatherData) => {
     
   let city = weatherData.name
@@ -96,12 +94,11 @@ const receivedWeatherData = (weatherData) => {
   cityWeatherBox.innerHTML = `${weather}`
   citySunriseBox.innerHTML = `<i class="fas fa-angle-up"></i> ${sunrise()}`
   citySunsetBox.innerHTML =  `<i class="fas fa-angle-down"></i> ${sunset()}`
-  
 }
 
 const doFetch = (fetchCityName) => {
   let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${fetchCityName},Sweden&units=metric&APPID=a0a451c0528dcf4cebd5c7bd578a9b46`
-  fetch(apiUrl).then(response => response.json()).then(receivedWeatherData)  
+  fetch(apiUrl).then(response => response.json()).then(receivedWeatherData) 
 }
 
 // Inital fetch with default choice
