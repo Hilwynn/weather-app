@@ -97,7 +97,7 @@ const receivedWeatherData = (weatherData) => {
 }
 
 const doFetch = (fetchCityName) => {
-  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${fetchCityName},Sweden&units=metric&APPID=a0a451c0528dcf4cebd5c7bd578a9b46`
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${fetchCityName},Sweden&units=metric&APPID=a0a451c0528dcf4cebd5c7bd578a9b46`
   fetch(apiUrl).then(response => response.json()).then(receivedWeatherData) 
 }
 
